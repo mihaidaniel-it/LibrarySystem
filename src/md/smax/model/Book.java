@@ -8,41 +8,41 @@ public class Book {
     private String genre;
 
 //    Setters
-    void setTitle(String title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
-    void setAuthor(String author) {
+    public void setAuthor(String author) {
         this.author = author;
     }
 
-    void setYear(int year) {
+    public void setYear(int year) {
         this.year = year;
     }
 
-    void setGenre(String genre) {
+    public void setGenre(String genre) {
         this.genre = genre;
     }
 
 //    Getters
-    String getTitle() {
+    public String getTitle() {
         return this.title;
     }
 
-    String getAuthor() {
+    public String getAuthor() {
         return this.author;
     }
 
-    int getYear() {
+    public int getYear() {
         return this.year;
     }
 
-    String getGenre() {
+    public String getGenre() {
         return this.genre;
     }
 
 //    Methods
     public String getBookInfo() {
-        System.out.println("Book " + this.title + " written by " + this.author + " in " + this.year + ". Genre: " + this.genre);
+        return "Book " + this.title + " written by " + this.author + " in " + this.year + ". Genre: " + this.genre;
     }
 }
